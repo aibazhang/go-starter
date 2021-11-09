@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"golang.org/x/tour/pic"
+)
 
 func arrays() {
 	var a [2]string
@@ -87,11 +91,23 @@ func for_range() {
 	}
 }
 
+func Pic(dx, dy int) [][]uint8 {
+	result := make([][]uint8, dy)
+	for y := range result {
+		result[y] = make([]uint8, dx)
+		for x := range result[y] {
+			result[y][x] = uint8(x ^ y)
+		}
+	}
+	return result
+}
+
 func main() {
 	// arrays()
 	// slices()
 	// slices_share_underlying_arrary()
 	// slice_iteral()
 	// slice_length_and_capacity()
-	for_range()
+	// for_range()
+	pic.Show(Pic)
 }

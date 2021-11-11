@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 type I interface {
@@ -44,23 +45,22 @@ func do(i interface{}) {
 }
 
 func main() {
-	/*
-		var i I
 
-		i = &T{"Hello"}
-		describe(i)
-		i.M()
+	var i I
 
-		i = F(math.Pi)
-		describe(i)
-		i.M()
+	i = &T{"Hello"}
+	describe(i)
+	i.M()
 
-		// Interface values with nil underlying values
-		var t *T
-		i = t
-		describe(i)
-		i.M()
-	*/
+	i = F(math.Pi)
+	describe(i)
+	i.M()
+
+	// Interface values with nil underlying values
+	var t *T
+	i = t
+	describe(i)
+	i.M()
 
 	// Nil interface values
 	// var i I

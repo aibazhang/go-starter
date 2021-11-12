@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/aibazhang/go-starter/duck"
 	"github.com/aibazhang/go-starter/greetings"
-	"github.com/aibazhang/go-starter/interfaces/duck"
 )
 
 func main() {

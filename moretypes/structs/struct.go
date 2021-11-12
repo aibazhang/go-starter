@@ -28,40 +28,13 @@ func NewLanguage(name string, langType string) *language {
 	return &language{name, langType}
 }
 
-type DuckI interface {
-	quack() string
-	fly() string
-}
-
-type duck struct {
-	Name string
-	age  int
-}
-
-func NewDuck(name string, age int) DuckI {
-	return &duck{name, age}
-}
-
-func (d *duck) quack() string {
-	return "QUUAAAACCCCKKKKK!!!!!!"
-}
-
-func (d *duck) fly() string {
-	return "I can NOT fly high"
-}
-
 func main() {
 	// Coodinate
 	// *p = Vertex{10000, 20000}
 	// fmt.Println(v1, p, v2, v3)
 
 	// Language
-	// l := NewLanguage("Go", "Static")
-	// fmt.Println("Name: " + l.Name)
-	// fmt.Println("Language: " + l.LangType)
-
-	// Duck
-	d := NewDuck("Donald", 100)
-	fmt.Println(d.quack())
-	fmt.Println(d.fly())
+	l := NewLanguage("Go", "Static")
+	fmt.Println("Name: " + l.Name)
+	fmt.Println("Language: " + l.LangType)
 }

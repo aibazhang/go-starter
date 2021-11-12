@@ -8,7 +8,6 @@ import (
 type I interface {
 	M()
 }
-
 type T struct {
 	S string
 }

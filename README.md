@@ -1,5 +1,7 @@
 # go-starter
 
 Get Started Go lang
-- Play [Tour of Go](https://tour.golang.org/welcome/1)
-- Run example in the [Documentation](https://golang.org/doc/)
+- [Tour of Go](https://tour.golang.org/welcome/1)
+- Example in the [Documentation](https://golang.org/doc/)
+- [Go moudles by example](https://github.com/go-modules-by-example/index)
+- [Interface example](https://blog.satotaichi.info/interface-with-constructor-in-golang/)

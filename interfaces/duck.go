@@ -1,4 +1,4 @@
-package main
+package duck
 
 import (
 	"bytes"
@@ -52,11 +52,4 @@ func (f *farmer) Breed() string {
 		fmt.Fprintf(&b, "#%d %s\n", i, d.quack())
 	}
 	return b.String()
-}
-
-func main() {
-	duck1 := NewDuck()
-	duck2 := NewNameDuck("Donald")
-	farmer := NewFarmer(duck1, duck2)
-	fmt.Println(farmer.Breed())
 }

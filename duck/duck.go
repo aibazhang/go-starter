@@ -1,8 +1,13 @@
 package duck
 
-// Duck
+// Duck Interface
 type DuckI interface {
 	quack() string
+}
+
+// Flyable
+type FlyI interface {
+	fly(height int) string
 }
 
 type duck struct{}

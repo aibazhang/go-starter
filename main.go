@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/aibazhang/go-starter/duck"
+	"github.com/aibazhang/go-starter/shape"
 )
 
 func main() {
@@ -36,4 +37,5 @@ func main() {
 	farmer := duck.NewFarmer(duck1, duck2)
 	fmt.Println(farmer.Breed())
 
+	shape.Run()
 }
